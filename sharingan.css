@@ -1,0 +1,210 @@
+
+body{
+  height: 100vh;
+  
+  background: radial-gradient(ellipse at bottom, #babe9b, #b5b8a9);
+ 
+}
+
+
+h1{
+  margin-top: 12px;
+  font-size: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+ color:#526852;
+}
+.img{
+display:flex;
+position: absolute;
+  bottom:78%;
+  width:260px;
+  right:87%;
+}
+.rengoku
+{width:200px;
+  height: 400px;
+  position: absolute;
+  top:20%;
+}
+.close
+{width:30px;
+  height: 30px;
+  position: absolute;
+  top:20%;
+  right: 86.4%;
+}
+.container{
+  max-width: 955px;
+ background-color:#c8c8d5;
+  border: 2px solid black;
+  margin: auto;
+  height: 60vh;
+  padding: 33px;
+  overflow-y: auto;
+  margin-bottom: 23px;
+  border-radius: 12px;
+}
+
+.message{
+  background-color: grey;
+  width: 24%;
+  padding: 10px;
+  margin: 17px 12px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.left{
+  float: left;
+  clear: both;
+}
+
+.right{
+  float: right;
+  clear: both;
+}
+
+
+#send-container{
+  display: block;
+  margin: auto;
+  text-align: center;
+  max-width: 1064px;
+  width: 100%;
+}
+
+#messageInp{
+  width: 80%;
+  border: 2px solid black;
+  background-color:#c8c8d5;
+  border-radius: 6px;
+  height: 34px;
+}
+.button {
+  display: inline-block;
+  background-color: #3bbd446e;
+  border-radius:10px;
+  color: #090909;
+  text-align: center;
+  font-size: 22px;
+  width: 110px;
+  transition: all 0.5s;
+  cursor: pointer;
+  position:relative;
+  left:28px;
+  margin: -40px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.toogle
+{
+
+ width: 40px;
+ height: 20px;
+ background-color: white;
+ border-radius: 30px;
+ display: flex;
+ align-items: center;
+ justify-content: space-around;
+ position: relative;
+ left:80%;
+
+}
+.toogle-icon
+{
+  color:goldenrod;
+}
+.toogle-ball
+{
+  width: 18px;
+  height: 18px;
+  background-color: black;
+  position: absolute;
+  right : 1px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 1s ease all;
+}
+.toogle.active{
+  background-color: rgb(0, 0, 0);
+}
+
+.toogle-ball.active{
+  background-color: white;
+  transform: translateX(-20px);
+}
+body.active {
+
+  background: radial-gradient(ellipse at bottom, #313030, #111);
+}
+.button.active{
+  background-color: #5d5d5d61;
+  color:#c8c8d5;
+}
+.container.active{
+  background-color: #616060;
+}
+h1.active
+{
+  color:#babe9b;
+}
+#messageInp.active{
+background-color: #807e7eba;
+}
+.img.active
+{
+  filter: brightness(900%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*      Responsiveness       */
+@media only screen and (max-width: 1000px)
+{
+  .button {
+    
+    position:relative;
+    left:0px;
+    
+  }
+  
+}
